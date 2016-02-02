@@ -9,9 +9,22 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    //Adding an Outlet from the the label om the display
+    @IBOutlet weak var switchState: UILabel!
+    
+    var data:String?
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //Do any additional setup after loading the view, typically from a nib
+        
+        if let label = data {
+            
+            switchState.text = data
+        }
     }
     
     override func didReceiveMemoryWarning() {

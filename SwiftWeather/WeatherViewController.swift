@@ -12,6 +12,25 @@ class WeatherViewController: UIViewController, UIPageViewControllerDataSource {
   @IBOutlet weak var temperatureLabel: UILabel!
   @IBOutlet var forecastViews: [ForecastView]!
     
+  @IBOutlet weak var mSwitch: UISwitch!
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "push")
+        {
+            var state:String
+            if (mSwitch.on)
+            {
+                state = "ON"
+            }
+            else
+                {
+                    state = "OFF"
+                }
+                (segue.destinationViewController as! SecondViewController).data = state
+            
+        }
+    }
+
   //Adding in code to add a UIPageviewController
     var pageViewController: UIPageViewController!
     var pageTitles: NSArray!
@@ -121,21 +140,7 @@ class WeatherViewController: UIViewController, UIPageViewControllerDataSource {
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
   // MARK: ViewModel
   var viewModel: WeatherViewModel? {
     didSet {

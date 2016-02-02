@@ -23,13 +23,44 @@
                     <view key="view" contentMode="scaleToFill" id="ete-n7-u4F">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Switch State" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9B-jY-vj7">
+                                <rect key="frame" x="237" y="126" width="127" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="qrE-9l-TYX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydh-Qa-l9x">
+                                <rect key="frame" x="279" y="172" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="Fhm-TT-EqE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28994149166580707" green="1" blue="0.85424481857359513" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jh2-EI-Koe" firstAttribute="top" secondItem="Ydh-Qa-l9x" secondAttribute="bottom" constant="407" id="72r-Jq-ORY"/>
+                            <constraint firstItem="Ydh-Qa-l9x" firstAttribute="centerX" secondItem="d9B-jY-vj7" secondAttribute="centerX" id="86q-5q-BJD"/>
+                            <constraint firstItem="d9B-jY-vj7" firstAttribute="centerX" secondItem="ete-n7-u4F" secondAttribute="centerX" id="SlG-WB-uAq"/>
+                            <constraint firstItem="Jh2-EI-Koe" firstAttribute="top" secondItem="d9B-jY-vj7" secondAttribute="bottom" constant="453" id="cxf-Rf-NhH"/>
+                            <constraint firstItem="Ydh-Qa-l9x" firstAttribute="top" secondItem="d9B-jY-vj7" secondAttribute="bottom" constant="25" id="eEK-vQ-rIL"/>
+                            <constraint firstItem="d9B-jY-vj7" firstAttribute="top" secondItem="XIY-u1-OD4" secondAttribute="bottom" constant="62" id="lai-b7-Gmx"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Second View" id="hDi-OT-ICm"/>
+                    <connections>
+                        <outlet property="switchState" destination="Ydh-Qa-l9x" id="URc-Ug-UIb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R5i-1w-a32" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1345" y="1494"/>
+            <point key="canvasLocation" x="609" y="1166"/>
         </scene>
         <!--First View-->
         <scene sceneID="tne-QT-ifu">
@@ -62,7 +93,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hId-DS-ttH">
-                                                        <rect key="frame" x="6" y="43" width="160" height="209"/>
+                                                        <rect key="frame" x="3" y="43" width="166" height="168"/>
                                                         <fontDescription key="fontDescription" name="WeatherIcons-Regular" family="Weather Icons" pointSize="144"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -71,7 +102,7 @@
                                                         </variation>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFc-pa-Aur">
-                                                        <rect key="frame" x="50" y="252" width="71" height="94"/>
+                                                        <rect key="frame" x="31" y="211" width="110" height="134"/>
                                                         <fontDescription key="fontDescription" name="WeatherIcons-Regular" family="Weather Icons" pointSize="64"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -95,13 +126,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WCS-fc-TZZ" userLabel="Forecast Container View">
                                         <rect key="frame" x="0.0" y="425" width="600" height="115"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rzR-3u-MJe">
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rzR-3u-MJe">
                                                 <rect key="frame" x="143" y="0.0" width="314" height="115"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wXV-Go-iDR">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wXV-Go-iDR">
                                                         <rect key="frame" x="0.0" y="0.0" width="142" height="115"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y4d-hQ-IEP" customClass="ForecastView" customModule="SwiftWeather" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y4d-hQ-IEP" customClass="ForecastView" customModule="SwiftWeather" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="115"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="115" id="SKb-Zc-5Zr"/>
@@ -114,7 +145,7 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="temperature" value="10"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X03-jw-bPo" customClass="ForecastView" customModule="SwiftWeather" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X03-jw-bPo" customClass="ForecastView" customModule="SwiftWeather" customModuleProvider="target">
                                                                 <rect key="frame" x="86" y="0.0" width="56" height="115"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -130,10 +161,10 @@
                                                             <constraint firstItem="y4d-hQ-IEP" firstAttribute="height" secondItem="X03-jw-bPo" secondAttribute="height" id="vRM-4u-kf2"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="6LM-Ly-chv">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="6LM-Ly-chv">
                                                         <rect key="frame" x="172" y="0.0" width="142" height="115"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8G3-c1-MSy" customClass="ForecastView" customModule="SwiftWeather" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8G3-c1-MSy" customClass="ForecastView" customModule="SwiftWeather" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="115"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -144,7 +175,7 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="temperature" value="12"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjK-Yg-kU1" customClass="ForecastView" customModule="SwiftWeather" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mjK-Yg-kU1" customClass="ForecastView" customModule="SwiftWeather" customModuleProvider="target">
                                                                 <rect key="frame" x="86" y="0.0" width="56" height="115"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -190,9 +221,12 @@
                                         </constraints>
                                         <state key="normal" title="Push View"/>
                                         <connections>
-                                            <segue destination="evu-vr-3TA" kind="show" id="AhS-vd-ep8"/>
+                                            <segue destination="evu-vr-3TA" kind="show" identifier="push" id="AhS-vd-ep8"/>
                                         </connections>
                                     </button>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G1i-G2-En0">
+                                        <rect key="frame" x="405" y="562" width="51" height="31"/>
+                                    </switch>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -211,7 +245,9 @@
                                     <constraint firstAttribute="bottom" secondItem="WCS-fc-TZZ" secondAttribute="bottom" priority="250" constant="60" id="ecC-D0-3e1"/>
                                     <constraint firstItem="fnK-Kw-Tks" firstAttribute="bottom" secondItem="8LB-3C-fUZ" secondAttribute="bottomMargin" id="gaw-IB-SaB"/>
                                     <constraint firstAttribute="trailing" secondItem="WCS-fc-TZZ" secondAttribute="trailing" id="kcs-hW-uwp"/>
+                                    <constraint firstItem="G1i-G2-En0" firstAttribute="leading" secondItem="qlB-Hr-8t8" secondAttribute="trailing" constant="17" id="oE9-b5-BVZ"/>
                                     <constraint firstItem="gh8-e9-Cg0" firstAttribute="leading" secondItem="8LB-3C-fUZ" secondAttribute="leading" id="phd-YU-KsB"/>
+                                    <constraint firstItem="G1i-G2-En0" firstAttribute="top" secondItem="qlB-Hr-8t8" secondAttribute="top" id="pxw-MO-YAW"/>
                                     <constraint firstItem="WCS-fc-TZZ" firstAttribute="top" secondItem="gh8-e9-Cg0" secondAttribute="bottom" constant="60" id="vm9-Hc-UkY"/>
                                 </constraints>
                                 <variation key="default">
@@ -260,6 +296,7 @@
                     <connections>
                         <outlet property="iconLabel" destination="hId-DS-ttH" id="LPc-4x-ucb"/>
                         <outlet property="locationLabel" destination="COR-kZ-hOu" id="ksQ-LM-5Vo"/>
+                        <outlet property="mSwitch" destination="G1i-G2-En0" id="XkR-T5-fXT"/>
                         <outlet property="temperatureLabel" destination="lFc-pa-Aur" id="3ka-Ce-vTD"/>
                         <outletCollection property="forecastViews" destination="y4d-hQ-IEP" collectionClass="NSMutableArray" id="lX3-ak-UIi"/>
                         <outletCollection property="forecastViews" destination="X03-jw-bPo" collectionClass="NSMutableArray" id="4an-ne-Yc5"/>
@@ -269,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593" y="737"/>
+            <point key="canvasLocation" x="-183" y="1159"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="D4O-WO-IoR">
@@ -277,7 +314,7 @@
                 <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="h2l-AM-fJl" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcj-sP-C0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1315" y="-168"/>
+            <point key="canvasLocation" x="-844" y="1986"/>
         </scene>
         <!--Content View Controller-->
         <scene sceneID="gds-pV-IcZ">
@@ -318,7 +355,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DxN-Nn-HLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1515" y="519"/>
+            <point key="canvasLocation" x="-141" y="1971"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hx5-R5-e7v">
