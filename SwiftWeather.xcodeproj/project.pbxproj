@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0D67DF996BAE66A191AB19E2 /* Pods_SwiftWeatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C73878F1557217817E50D3 /* Pods_SwiftWeatherTests.framework */; };
 		2217FA6A1C6048FA00D55313 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2217FA691C6048FA00D55313 /* SecondViewController.swift */; };
+		2217FA6D1C61FE8D00D55313 /* xLatestPostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2217FA6C1C61FE8D00D55313 /* xLatestPostsTableViewController.swift */; };
+		2217FA711C62C20300D55313 /* SegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2217FA701C62C20300D55313 /* SegmentedViewController.swift */; };
 		22D3786D1C5F7D0200D2687F /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3786C1C5F7D0200D2687F /* ContentViewController.swift */; };
 		47E92A220124B56850397BB2 /* Pods_SwiftWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E01F72662147E87D287395 /* Pods_SwiftWeather.framework */; };
 		AE09C4301B9723DE00C7CCED /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09C42F1B9723DE00C7CCED /* LocationService.swift */; };
@@ -60,6 +62,8 @@
 
 /* Begin PBXFileReference section */
 		2217FA691C6048FA00D55313 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		2217FA6C1C61FE8D00D55313 /* xLatestPostsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = xLatestPostsTableViewController.swift; sourceTree = "<group>"; };
+		2217FA701C62C20300D55313 /* SegmentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedViewController.swift; sourceTree = "<group>"; };
 		22D3786C1C5F7D0200D2687F /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		2A371C39E28FF7B95B5CF6ED /* Pods-SwiftWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftWeather/Pods-SwiftWeather.debug.xcconfig"; sourceTree = "<group>"; };
 		32E01F72662147E87D287395 /* Pods_SwiftWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +134,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2217FA6B1C61FE2F00D55313 /* LatestPosts */ = {
+			isa = PBXGroup;
+			children = (
+				2217FA6E1C61FFE700D55313 /* Services */,
+				2217FA6C1C61FE8D00D55313 /* xLatestPostsTableViewController.swift */,
+			);
+			name = LatestPosts;
+			sourceTree = "<group>";
+		};
+		2217FA6E1C61FFE700D55313 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		2217FA6F1C62C1B500D55313 /* SegmentedView */ = {
+			isa = PBXGroup;
+			children = (
+				2217FA701C62C20300D55313 /* SegmentedViewController.swift */,
+			);
+			name = SegmentedView;
+			sourceTree = "<group>";
+		};
 		55A8448042FE7DD1B099DE9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +233,8 @@
 		AEBE64411B8D231E004A0814 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				2217FA6F1C62C1B500D55313 /* SegmentedView */,
+				2217FA6B1C61FE2F00D55313 /* LatestPosts */,
 				AEBE64401B8D2306004A0814 /* Weather */,
 				AEBE643C1B8D203C004A0814 /* Forecast */,
 			);
@@ -552,7 +582,9 @@
 				AEBE643B1B8D1F90004A0814 /* ForecastViewModel.swift in Sources */,
 				AECBA5E61B836BF20004A536 /* AppDelegate.swift in Sources */,
 				AEF61B281BA23B1200E8F259 /* ForecastDateTime.swift in Sources */,
+				2217FA711C62C20300D55313 /* SegmentedViewController.swift in Sources */,
 				AEEDF6891B9F09E300C6067B /* Error.swift in Sources */,
+				2217FA6D1C61FE8D00D55313 /* xLatestPostsTableViewController.swift in Sources */,
 				AEEDF68B1B9F99F800C6067B /* WeatherBuilder.swift in Sources */,
 				AEBE64451B8D23B8004A0814 /* WeatherViewModel.swift in Sources */,
 				AED4B2C21B876E8B0003D765 /* ForecastView.swift in Sources */,
