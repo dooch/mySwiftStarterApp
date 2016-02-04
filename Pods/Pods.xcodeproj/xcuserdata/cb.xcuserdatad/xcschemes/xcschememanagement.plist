@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Nimble.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,6 +37,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>15AB0553C635C674A9E7ACC678340E0E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>432ECC54282C84882B482CCB4CF227FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4417B2E0145291298C326319EC320CEA</key>
 		<dict>
 			<key>primary</key>
@@ -42,17 +57,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>70D9B1BB3A1E3B43C805D4417E4BE1BA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B4693BF7296E3646A4B50EE00C9C0D6A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>C5DB5104FED3C10F78978AFC810982B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD7C696EDC46661A20CC9CA8D629CDD0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -9,9 +9,14 @@
 /* Begin PBXBuildFile section */
 		0D67DF996BAE66A191AB19E2 /* Pods_SwiftWeatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C73878F1557217817E50D3 /* Pods_SwiftWeatherTests.framework */; };
 		2217FA6A1C6048FA00D55313 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2217FA691C6048FA00D55313 /* SecondViewController.swift */; };
-		2217FA6D1C61FE8D00D55313 /* xLatestPostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2217FA6C1C61FE8D00D55313 /* xLatestPostsTableViewController.swift */; };
 		2217FA711C62C20300D55313 /* SegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2217FA701C62C20300D55313 /* SegmentedViewController.swift */; };
+		2217FA731C6320B600D55313 /* LatestPostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2217FA721C6320B600D55313 /* LatestPostsTableViewController.swift */; };
+		2217FA751C6320F200D55313 /* LatestPostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2217FA741C6320F200D55313 /* LatestPostsTableViewCell.swift */; };
+		2217FA771C63272B00D55313 /* SinglePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2217FA761C63272B00D55313 /* SinglePostViewController.swift */; };
 		22D3786D1C5F7D0200D2687F /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3786C1C5F7D0200D2687F /* ContentViewController.swift */; };
+		22EBEA051C634BF00032DE9C /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EBEA041C634BF00032DE9C /* SwiftyJSON.framework */; };
+		22EBEA071C634EC80032DE9C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EBEA061C634EC80032DE9C /* Alamofire.framework */; };
+		22EBEA091C6350A80032DE9C /* Essentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBEA081C6350A80032DE9C /* Essentials.swift */; };
 		47E92A220124B56850397BB2 /* Pods_SwiftWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E01F72662147E87D287395 /* Pods_SwiftWeather.framework */; };
 		AE09C4301B9723DE00C7CCED /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09C42F1B9723DE00C7CCED /* LocationService.swift */; };
 		AE0DC2CD1B8E7B3900E67147 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0DC2CC1B8E7B3900E67147 /* Observable.swift */; };
@@ -62,9 +67,14 @@
 
 /* Begin PBXFileReference section */
 		2217FA691C6048FA00D55313 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		2217FA6C1C61FE8D00D55313 /* xLatestPostsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = xLatestPostsTableViewController.swift; sourceTree = "<group>"; };
 		2217FA701C62C20300D55313 /* SegmentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedViewController.swift; sourceTree = "<group>"; };
+		2217FA721C6320B600D55313 /* LatestPostsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestPostsTableViewController.swift; sourceTree = "<group>"; };
+		2217FA741C6320F200D55313 /* LatestPostsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestPostsTableViewCell.swift; sourceTree = "<group>"; };
+		2217FA761C63272B00D55313 /* SinglePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePostViewController.swift; sourceTree = "<group>"; };
 		22D3786C1C5F7D0200D2687F /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		22EBEA041C634BF00032DE9C /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		22EBEA061C634EC80032DE9C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		22EBEA081C6350A80032DE9C /* Essentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Essentials.swift; sourceTree = "<group>"; };
 		2A371C39E28FF7B95B5CF6ED /* Pods-SwiftWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftWeather/Pods-SwiftWeather.debug.xcconfig"; sourceTree = "<group>"; };
 		32E01F72662147E87D287395 /* Pods_SwiftWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C73878F1557217817E50D3 /* Pods_SwiftWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +122,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22EBEA071C634EC80032DE9C /* Alamofire.framework in Frameworks */,
+				22EBEA051C634BF00032DE9C /* SwiftyJSON.framework in Frameworks */,
 				47E92A220124B56850397BB2 /* Pods_SwiftWeather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +149,11 @@
 		2217FA6B1C61FE2F00D55313 /* LatestPosts */ = {
 			isa = PBXGroup;
 			children = (
+				2217FA761C63272B00D55313 /* SinglePostViewController.swift */,
+				2217FA741C6320F200D55313 /* LatestPostsTableViewCell.swift */,
+				2217FA721C6320B600D55313 /* LatestPostsTableViewController.swift */,
 				2217FA6E1C61FFE700D55313 /* Services */,
-				2217FA6C1C61FE8D00D55313 /* xLatestPostsTableViewController.swift */,
+				22EBEA081C6350A80032DE9C /* Essentials.swift */,
 			);
 			name = LatestPosts;
 			sourceTree = "<group>";
@@ -161,6 +176,8 @@
 		55A8448042FE7DD1B099DE9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22EBEA061C634EC80032DE9C /* Alamofire.framework */,
+				22EBEA041C634BF00032DE9C /* SwiftyJSON.framework */,
 				32E01F72662147E87D287395 /* Pods_SwiftWeather.framework */,
 				64C73878F1557217817E50D3 /* Pods_SwiftWeatherTests.framework */,
 			);
@@ -577,14 +594,16 @@
 			files = (
 				AE0DC2CD1B8E7B3900E67147 /* Observable.swift in Sources */,
 				AE2C7D6C1BA028C000A7A714 /* WeatherIcon.swift in Sources */,
+				2217FA771C63272B00D55313 /* SinglePostViewController.swift in Sources */,
 				22D3786D1C5F7D0200D2687F /* ContentViewController.swift in Sources */,
 				AECBA5E81B836BF20004A536 /* WeatherViewController.swift in Sources */,
+				2217FA731C6320B600D55313 /* LatestPostsTableViewController.swift in Sources */,
 				AEBE643B1B8D1F90004A0814 /* ForecastViewModel.swift in Sources */,
 				AECBA5E61B836BF20004A536 /* AppDelegate.swift in Sources */,
 				AEF61B281BA23B1200E8F259 /* ForecastDateTime.swift in Sources */,
+				22EBEA091C6350A80032DE9C /* Essentials.swift in Sources */,
 				2217FA711C62C20300D55313 /* SegmentedViewController.swift in Sources */,
 				AEEDF6891B9F09E300C6067B /* Error.swift in Sources */,
-				2217FA6D1C61FE8D00D55313 /* xLatestPostsTableViewController.swift in Sources */,
 				AEEDF68B1B9F99F800C6067B /* WeatherBuilder.swift in Sources */,
 				AEBE64451B8D23B8004A0814 /* WeatherViewModel.swift in Sources */,
 				AED4B2C21B876E8B0003D765 /* ForecastView.swift in Sources */,
@@ -592,6 +611,7 @@
 				2217FA6A1C6048FA00D55313 /* SecondViewController.swift in Sources */,
 				AEBE64431B8D2370004A0814 /* Weather.swift in Sources */,
 				AEBE643E1B8D2108004A0814 /* Forecast.swift in Sources */,
+				2217FA751C6320F200D55313 /* LatestPostsTableViewCell.swift in Sources */,
 				CAB56F4267B3BC487990A92D /* OpenWeatherMapService.swift in Sources */,
 				AEEDF68D1B9F9B2900C6067B /* Temperature.swift in Sources */,
 				CAB565DDADB61DF9053BD50F /* WeatherServiceProtocol.swift in Sources */,
@@ -743,6 +763,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = SwiftWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.streetartcritic;
@@ -756,6 +780,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = SwiftWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.streetartcritic;
