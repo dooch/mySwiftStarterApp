@@ -92,8 +92,8 @@
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hId-DS-ttH">
-                                                        <rect key="frame" x="3" y="43" width="166" height="168"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hId-DS-ttH">
+                                                        <rect key="frame" x="6" y="43" width="160" height="209"/>
                                                         <fontDescription key="fontDescription" name="WeatherIcons-Regular" family="Weather Icons" pointSize="144"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -101,8 +101,8 @@
                                                             <rect key="frame" x="5.5" y="21" width="159.5" height="208.5"/>
                                                         </variation>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFc-pa-Aur">
-                                                        <rect key="frame" x="31" y="211" width="110" height="134"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFc-pa-Aur">
+                                                        <rect key="frame" x="50" y="252" width="71" height="94"/>
                                                         <fontDescription key="fontDescription" name="WeatherIcons-Regular" family="Weather Icons" pointSize="64"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -317,7 +317,7 @@
                 <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="h2l-AM-fJl" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcj-sP-C0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2282" y="1606"/>
+            <point key="canvasLocation" x="-2338" y="1562"/>
         </scene>
         <!--Content View Controller-->
         <scene sceneID="gds-pV-IcZ">
@@ -360,7 +360,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DxN-Nn-HLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2237" y="2319"/>
+            <point key="canvasLocation" x="-2338" y="2251"/>
         </scene>
         <!--Listings-->
         <scene sceneID="hx5-R5-e7v">
@@ -491,51 +491,56 @@
         <scene sceneID="5E4-ZZ-Gdz">
             <objects>
                 <tableViewController id="SxM-oe-CnX" customClass="LatestPostsTableViewController" customModule="SwiftWeather" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="282" sectionHeaderHeight="18" sectionFooterHeight="18" id="z8Y-7a-4Qp">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="404" sectionHeaderHeight="18" sectionFooterHeight="18" id="z8Y-7a-4Qp">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="282" id="QfC-Pn-7Sd" customClass="LatestPostsTableViewCell" customModule="SwiftWeather" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="600" height="282"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="404" id="QfC-Pn-7Sd" customClass="LatestPostsTableViewCell" customModule="SwiftWeather" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="600" height="404"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="cell" tableViewCell="QfC-Pn-7Sd" id="C8W-nO-5y1">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="282"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="404"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqv-Bx-nHs">
-                                            <rect key="frame" x="8" y="8" width="584" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="oNd-Oe-7gV"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="8" y="8" width="584" height="28"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYW-Zc-SWq">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYW-Zc-SWq">
                                             <rect key="frame" x="8" y="37" width="584" height="21"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="XMZ-X3-rnt"/>
+                                                <constraint firstAttribute="height" constant="21" id="nZx-Eg-Q2k"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="...">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Ls-Hi-wM3">
-                                            <rect key="frame" x="8" y="66" width="584" height="208"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Ls-Hi-wM3">
+                                            <rect key="frame" x="8" y="66" width="584" height="330"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="mqv-Bx-nHs" firstAttribute="top" secondItem="C8W-nO-5y1" secondAttribute="topMargin" id="4nD-Hz-GDR"/>
-                                        <constraint firstItem="mqv-Bx-nHs" firstAttribute="trailing" secondItem="0Ls-Hi-wM3" secondAttribute="trailing" id="B5Y-WA-evH"/>
-                                        <constraint firstItem="0Ls-Hi-wM3" firstAttribute="top" secondItem="fYW-Zc-SWq" secondAttribute="bottom" constant="8" symbolic="YES" id="CNj-wd-2DC"/>
-                                        <constraint firstItem="mqv-Bx-nHs" firstAttribute="leading" secondItem="C8W-nO-5y1" secondAttribute="leadingMargin" id="Xjz-fp-HkW"/>
-                                        <constraint firstItem="fYW-Zc-SWq" firstAttribute="leading" secondItem="0Ls-Hi-wM3" secondAttribute="leading" id="bbg-xQ-JIq"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="0Ls-Hi-wM3" secondAttribute="bottom" constant="-0.5" id="dsC-Gd-hK3"/>
-                                        <constraint firstItem="fYW-Zc-SWq" firstAttribute="trailing" secondItem="mqv-Bx-nHs" secondAttribute="trailing" id="fcb-a5-ika"/>
-                                        <constraint firstItem="fYW-Zc-SWq" firstAttribute="top" secondItem="mqv-Bx-nHs" secondAttribute="bottom" constant="8" symbolic="YES" id="mgW-Jg-j29"/>
-                                        <constraint firstItem="fYW-Zc-SWq" firstAttribute="leading" secondItem="mqv-Bx-nHs" secondAttribute="leading" id="sx5-Qf-UrN"/>
-                                        <constraint firstItem="0Ls-Hi-wM3" firstAttribute="trailing" secondItem="C8W-nO-5y1" secondAttribute="trailingMargin" id="uOY-SB-cMb"/>
+                                        <constraint firstItem="mqv-Bx-nHs" firstAttribute="leading" secondItem="C8W-nO-5y1" secondAttribute="leadingMargin" id="2il-Hc-c9A"/>
+                                        <constraint firstItem="0Ls-Hi-wM3" firstAttribute="trailing" secondItem="C8W-nO-5y1" secondAttribute="trailingMargin" id="6aq-6V-47T"/>
+                                        <constraint firstItem="mqv-Bx-nHs" firstAttribute="leading" secondItem="fYW-Zc-SWq" secondAttribute="leading" id="7fZ-VA-mRk"/>
+                                        <constraint firstItem="fYW-Zc-SWq" firstAttribute="top" secondItem="C8W-nO-5y1" secondAttribute="top" constant="37" id="A0C-Ye-oR4"/>
+                                        <constraint firstItem="0Ls-Hi-wM3" firstAttribute="top" secondItem="fYW-Zc-SWq" secondAttribute="bottom" constant="8" symbolic="YES" id="GWE-FQ-nIY"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="0Ls-Hi-wM3" secondAttribute="bottom" constant="-0.5" id="H5z-mz-0xZ"/>
+                                        <constraint firstItem="0Ls-Hi-wM3" firstAttribute="leading" secondItem="fYW-Zc-SWq" secondAttribute="leading" id="Iff-L1-vGl"/>
+                                        <constraint firstItem="0Ls-Hi-wM3" firstAttribute="leading" secondItem="fYW-Zc-SWq" secondAttribute="leading" id="NAv-Xy-lbr"/>
+                                        <constraint firstItem="fYW-Zc-SWq" firstAttribute="trailing" secondItem="0Ls-Hi-wM3" secondAttribute="trailing" id="UUh-gP-e3t"/>
+                                        <constraint firstItem="mqv-Bx-nHs" firstAttribute="trailing" secondItem="fYW-Zc-SWq" secondAttribute="trailing" id="fWW-Bn-EnG"/>
+                                        <constraint firstItem="mqv-Bx-nHs" firstAttribute="top" secondItem="C8W-nO-5y1" secondAttribute="topMargin" id="mZE-kO-M23"/>
+                                        <constraint firstItem="fYW-Zc-SWq" firstAttribute="leading" secondItem="0Ls-Hi-wM3" secondAttribute="leading" id="yqq-lw-Hij"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -554,7 +559,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6sx-D3-j83" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-734" y="-57"/>
+            <point key="canvasLocation" x="-794" y="-57"/>
         </scene>
         <!--SinglePostViewController-->
         <scene sceneID="8Uw-x8-1gZ">
@@ -572,7 +577,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7fe-gz-a2A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-724" y="626"/>
+            <point key="canvasLocation" x="-786" y="847"/>
         </scene>
         <!--StaterAppViewTabViewController-->
         <scene sceneID="yXz-1D-FZP">
