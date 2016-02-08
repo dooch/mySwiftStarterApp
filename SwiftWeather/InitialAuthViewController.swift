@@ -35,6 +35,8 @@ class InitialAuthViewController: UIViewController {
     }
     
     @IBAction func startGoogleOauth2Test(sender: AnyObject) {
+    
+   // @IBAction func startGoogleOauth2Test(sender: AnyObject) {
         self.result.text = ""
         UsingOauth2(googleOauth2Settings, performWithToken: { token in
             GoogleRequestConvertible.OAuthToken = token
@@ -53,6 +55,46 @@ class InitialAuthViewController: UIViewController {
         })
     }
     
+
+    //Modification adding some code to make a post request submission.
+    //------------------------------------------------------------------
+    @IBAction func CreatePostRequest(sender: AnyObject) {
+        
+      //  postToSeverFunction()
+
+        
+        
+    }
+    
+/*    func postToSeverFunction () {
+        
+        print("Button Presed")
+        var url: NSURL = NSURL(string: "http://streetartcritic.com/wp-json/wp/v2/posts")!
+        var request:NSMutableURLRequest = NSMutableURLRequest(URL:url)
+        var bodyData = "data=something"
+        
+        Alamofire.request(.POST, url, parameters: [:], encoding: .Custom({
+            (convertible, params) in
+            var mutableRequest = convertible.URLRequest.copy() as! NSMutableURLRequest
+            mutableRequest.HTTPBody = "myBodyString".dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
+            return (mutableRequest, nil)
+        }))
+
+        
+        
+   //     request.HTTPMethod = "POST"
+   //     request.HTTPBody = bodyData.dataUsingEncoding(NSUTF8StringEncoding);
+   //     NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue())
+   //         {
+   //             (response, data, error) in
+   //             print(response)
+   //         }
+        
+    }
+    
+    //------------------------------------------------------------------
+    
+ */
     @IBAction func clearTokens(sender: AnyObject) {
     
    // @IBAction func clearTokens(sender: AnyObject) {
@@ -60,6 +102,8 @@ class InitialAuthViewController: UIViewController {
         Oauth2ClearTokensFromKeychain(googleOauth2Settings)
     }
 }
+
+
 
 //.responseObject { (result:Result<T>) -> Void in
 //    self.handleResponse(result, completionHandler: completionHandler)

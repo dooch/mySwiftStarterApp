@@ -473,8 +473,8 @@
                                     <action selector="startWordpressOauth2Test:" destination="seM-Dc-KS0" eventType="touchUpInside" id="N9p-B9-H61"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="50F-64-NuM">
-                                <rect key="frame" x="20" y="95" width="560" height="436"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="50F-64-NuM">
+                                <rect key="frame" x="20" y="234" width="560" height="297"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -490,19 +490,40 @@
                                     <action selector="clearTokens:" destination="seM-Dc-KS0" eventType="touchUpInside" id="5yS-um-ZbJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lip-nm-dtC">
+                                <rect key="frame" x="20" y="95" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Google Login">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGoogleOauth2Test:" destination="seM-Dc-KS0" eventType="touchUpInside" id="4W1-uf-ld1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSm-ac-KoX">
+                                <rect key="frame" x="20" y="142" width="565" height="30"/>
+                                <state key="normal" title="Create New Post"/>
+                                <connections>
+                                    <action selector="CreatePostRequest:" destination="seM-Dc-KS0" eventType="touchUpInside" id="agO-3l-0Dg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="50F-64-NuM" firstAttribute="leading" secondItem="lip-nm-dtC" secondAttribute="leading" id="2Fm-wj-78t"/>
                             <constraint firstItem="brX-IW-OVa" firstAttribute="trailing" secondItem="3ge-xv-Jmw" secondAttribute="trailingMargin" id="92D-J7-ItJ"/>
                             <constraint firstItem="brX-IW-OVa" firstAttribute="leading" secondItem="3ge-xv-Jmw" secondAttribute="leadingMargin" id="9yW-10-Anh"/>
-                            <constraint firstAttribute="bottom" secondItem="50F-64-NuM" secondAttribute="bottom" constant="20" symbolic="YES" id="Dnl-7s-bdf"/>
+                            <constraint firstAttribute="bottom" secondItem="50F-64-NuM" secondAttribute="bottom" constant="20" symbolic="YES" id="C5G-nB-kQW"/>
                             <constraint firstItem="brX-IW-OVa" firstAttribute="trailing" secondItem="m4j-kY-bTj" secondAttribute="trailing" id="Fpm-31-1MK"/>
-                            <constraint firstItem="50F-64-NuM" firstAttribute="trailing" secondItem="brX-IW-OVa" secondAttribute="trailing" id="GY1-HO-6zO"/>
-                            <constraint firstItem="50F-64-NuM" firstAttribute="top" secondItem="brX-IW-OVa" secondAttribute="bottom" constant="8" symbolic="YES" id="QCb-vy-PK1"/>
-                            <constraint firstItem="50F-64-NuM" firstAttribute="leading" secondItem="brX-IW-OVa" secondAttribute="leading" id="eDe-Ex-yKr"/>
+                            <constraint firstItem="50F-64-NuM" firstAttribute="trailing" secondItem="lip-nm-dtC" secondAttribute="trailing" id="KTt-Hb-t8F"/>
+                            <constraint firstItem="lip-nm-dtC" firstAttribute="trailing" secondItem="brX-IW-OVa" secondAttribute="trailing" id="PBl-Jh-TPW"/>
+                            <constraint firstItem="lip-nm-dtC" firstAttribute="top" secondItem="brX-IW-OVa" secondAttribute="bottom" constant="8" symbolic="YES" id="cOS-Dz-Ttl"/>
                             <constraint firstItem="brX-IW-OVa" firstAttribute="leading" secondItem="m4j-kY-bTj" secondAttribute="leading" id="kUN-tq-aAA"/>
+                            <constraint firstItem="50F-64-NuM" firstAttribute="top" secondItem="lip-nm-dtC" secondAttribute="bottom" constant="44" id="lKI-pg-gF1"/>
                             <constraint firstItem="brX-IW-OVa" firstAttribute="top" secondItem="m4j-kY-bTj" secondAttribute="bottom" constant="8" symbolic="YES" id="r2c-XD-d9z"/>
                             <constraint firstItem="m4j-kY-bTj" firstAttribute="top" secondItem="3ge-xv-Jmw" secondAttribute="topMargin" constant="19" id="rfk-Ps-cwT"/>
+                            <constraint firstItem="lip-nm-dtC" firstAttribute="leading" secondItem="brX-IW-OVa" secondAttribute="leading" id="rfo-oV-ZiN"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="contacts" id="Lkm-rl-hk8"/>
