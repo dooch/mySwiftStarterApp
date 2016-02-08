@@ -132,7 +132,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wXV-Go-iDR">
                                                         <rect key="frame" x="0.0" y="0.0" width="142" height="115"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y4d-hQ-IEP" customClass="ForecastView" customModule="SwiftWeather" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y4d-hQ-IEP" customClass="ForecastView" customModule="SwiftWeather" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="115"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="115" id="SKb-Zc-5Zr"/>
@@ -145,7 +145,7 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="temperature" value="10"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X03-jw-bPo" customClass="ForecastView" customModule="SwiftWeather" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X03-jw-bPo" customClass="ForecastView" customModule="SwiftWeather" customModuleProvider="target">
                                                                 <rect key="frame" x="86" y="0.0" width="56" height="115"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -164,7 +164,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="6LM-Ly-chv">
                                                         <rect key="frame" x="172" y="0.0" width="142" height="115"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8G3-c1-MSy" customClass="ForecastView" customModule="SwiftWeather" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8G3-c1-MSy" customClass="ForecastView" customModule="SwiftWeather" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="115"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -175,7 +175,7 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="temperature" value="12"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mjK-Yg-kU1" customClass="ForecastView" customModule="SwiftWeather" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjK-Yg-kU1" customClass="ForecastView" customModule="SwiftWeather" customModuleProvider="target">
                                                                 <rect key="frame" x="86" y="0.0" width="56" height="115"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -412,7 +412,7 @@
                                         <rect key="frame" x="0.0" y="28" width="576" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qqd-7i-gbo" id="t47-qy-46c">
-                                            <rect key="frame" x="0.0" y="0.0" width="576" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="576" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -451,10 +451,10 @@
             </objects>
             <point key="canvasLocation" x="-1475" y="832"/>
         </scene>
-        <!--Submit New Post-->
+        <!--Login Or Register-->
         <scene sceneID="Qu1-SI-r8k">
             <objects>
-                <viewController title="Submit New Post" id="seM-Dc-KS0" sceneMemberID="viewController">
+                <viewController title="Login Or Register" id="seM-Dc-KS0" customClass="InitialAuthViewController" customModule="SwiftWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XbP-Id-9aD"/>
                         <viewControllerLayoutGuide type="bottom" id="rhB-jK-e5G"/>
@@ -463,29 +463,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submit a New Post" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cN0-OH-K5r">
-                                <rect key="frame" x="96" y="86" width="286" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="286" id="KNl-rX-S8j"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brX-IW-OVa">
+                                <rect key="frame" x="20" y="57" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="oAuth Login">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startWordpressOauth2Test:" destination="seM-Dc-KS0" eventType="touchUpInside" id="N9p-B9-H61"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="50F-64-NuM">
+                                <rect key="frame" x="20" y="95" width="560" height="436"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4j-kY-bTj">
+                                <rect key="frame" x="20" y="19" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Clear Token">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearTokens:" destination="seM-Dc-KS0" eventType="touchUpInside" id="5yS-um-ZbJ"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.89710867473915024" green="1" blue="0.31966941970129403" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="cN0-OH-K5r" firstAttribute="top" secondItem="XbP-Id-9aD" secondAttribute="bottom" constant="66" id="1Bk-jJ-ECC"/>
-                            <constraint firstItem="rhB-jK-e5G" firstAttribute="top" secondItem="cN0-OH-K5r" secondAttribute="bottom" constant="444" id="5N3-aM-E6c"/>
-                            <constraint firstItem="cN0-OH-K5r" firstAttribute="leading" secondItem="3ge-xv-Jmw" secondAttribute="leadingMargin" constant="76" id="H1Q-lK-wHF"/>
+                            <constraint firstItem="brX-IW-OVa" firstAttribute="trailing" secondItem="3ge-xv-Jmw" secondAttribute="trailingMargin" id="92D-J7-ItJ"/>
+                            <constraint firstItem="brX-IW-OVa" firstAttribute="leading" secondItem="3ge-xv-Jmw" secondAttribute="leadingMargin" id="9yW-10-Anh"/>
+                            <constraint firstAttribute="bottom" secondItem="50F-64-NuM" secondAttribute="bottom" constant="20" symbolic="YES" id="Dnl-7s-bdf"/>
+                            <constraint firstItem="brX-IW-OVa" firstAttribute="trailing" secondItem="m4j-kY-bTj" secondAttribute="trailing" id="Fpm-31-1MK"/>
+                            <constraint firstItem="50F-64-NuM" firstAttribute="trailing" secondItem="brX-IW-OVa" secondAttribute="trailing" id="GY1-HO-6zO"/>
+                            <constraint firstItem="50F-64-NuM" firstAttribute="top" secondItem="brX-IW-OVa" secondAttribute="bottom" constant="8" symbolic="YES" id="QCb-vy-PK1"/>
+                            <constraint firstItem="50F-64-NuM" firstAttribute="leading" secondItem="brX-IW-OVa" secondAttribute="leading" id="eDe-Ex-yKr"/>
+                            <constraint firstItem="brX-IW-OVa" firstAttribute="leading" secondItem="m4j-kY-bTj" secondAttribute="leading" id="kUN-tq-aAA"/>
+                            <constraint firstItem="brX-IW-OVa" firstAttribute="top" secondItem="m4j-kY-bTj" secondAttribute="bottom" constant="8" symbolic="YES" id="r2c-XD-d9z"/>
+                            <constraint firstItem="m4j-kY-bTj" firstAttribute="top" secondItem="3ge-xv-Jmw" secondAttribute="topMargin" constant="19" id="rfk-Ps-cwT"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="recents" id="Lkm-rl-hk8"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="Lkm-rl-hk8"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="result" destination="50F-64-NuM" id="8Iw-90-7OE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3j-vm-BzZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3080" y="-26"/>
+            <point key="canvasLocation" x="-3082" y="-104"/>
         </scene>
         <!--Latest Posts Table View Controller-->
         <scene sceneID="5E4-ZZ-Gdz">
@@ -497,10 +525,10 @@
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="404" id="QfC-Pn-7Sd" customClass="LatestPostsTableViewCell" customModule="SwiftWeather" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="600" height="404"/>
+                                <rect key="frame" x="0.0" y="49.5" width="600" height="404"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="cell" tableViewCell="QfC-Pn-7Sd" id="C8W-nO-5y1">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="404"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="403.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqv-Bx-nHs">

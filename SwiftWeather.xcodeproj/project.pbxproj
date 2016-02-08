@@ -14,6 +14,11 @@
 		2217FA751C6320F200D55313 /* LatestPostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2217FA741C6320F200D55313 /* LatestPostsTableViewCell.swift */; };
 		2217FA771C63272B00D55313 /* SinglePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2217FA761C63272B00D55313 /* SinglePostViewController.swift */; };
 		22D3786D1C5F7D0200D2687F /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3786C1C5F7D0200D2687F /* ContentViewController.swift */; };
+		22D61F4F1C68302F006C87A4 /* Oauth2Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D61F4E1C68302F006C87A4 /* Oauth2Settings.swift */; };
+		22D61F511C68305B006C87A4 /* AlamofireOauth2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D61F501C68305B006C87A4 /* AlamofireOauth2.swift */; };
+		22D61F531C68308E006C87A4 /* AuthentificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D61F521C68308E006C87A4 /* AuthentificationViewController.swift */; };
+		22D61F551C6830C1006C87A4 /* OAuth2Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D61F541C6830C1006C87A4 /* OAuth2Client.swift */; };
+		22D61F571C68313A006C87A4 /* InitialAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D61F561C68313A006C87A4 /* InitialAuthViewController.swift */; };
 		22EBEA051C634BF00032DE9C /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EBEA041C634BF00032DE9C /* SwiftyJSON.framework */; };
 		22EBEA071C634EC80032DE9C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EBEA061C634EC80032DE9C /* Alamofire.framework */; };
 		22EBEA091C6350A80032DE9C /* Essentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBEA081C6350A80032DE9C /* Essentials.swift */; };
@@ -72,6 +77,11 @@
 		2217FA741C6320F200D55313 /* LatestPostsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestPostsTableViewCell.swift; sourceTree = "<group>"; };
 		2217FA761C63272B00D55313 /* SinglePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePostViewController.swift; sourceTree = "<group>"; };
 		22D3786C1C5F7D0200D2687F /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		22D61F4E1C68302F006C87A4 /* Oauth2Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Oauth2Settings.swift; sourceTree = "<group>"; };
+		22D61F501C68305B006C87A4 /* AlamofireOauth2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireOauth2.swift; sourceTree = "<group>"; };
+		22D61F521C68308E006C87A4 /* AuthentificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthentificationViewController.swift; sourceTree = "<group>"; };
+		22D61F541C6830C1006C87A4 /* OAuth2Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2Client.swift; sourceTree = "<group>"; };
+		22D61F561C68313A006C87A4 /* InitialAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialAuthViewController.swift; sourceTree = "<group>"; };
 		22EBEA041C634BF00032DE9C /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		22EBEA061C634EC80032DE9C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		22EBEA081C6350A80032DE9C /* Essentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Essentials.swift; sourceTree = "<group>"; };
@@ -173,6 +183,18 @@
 			name = SegmentedView;
 			sourceTree = "<group>";
 		};
+		22D61F4D1C682FBE006C87A4 /* AlamofireOauth2 */ = {
+			isa = PBXGroup;
+			children = (
+				22D61F4E1C68302F006C87A4 /* Oauth2Settings.swift */,
+				22D61F501C68305B006C87A4 /* AlamofireOauth2.swift */,
+				22D61F521C68308E006C87A4 /* AuthentificationViewController.swift */,
+				22D61F541C6830C1006C87A4 /* OAuth2Client.swift */,
+				22D61F561C68313A006C87A4 /* InitialAuthViewController.swift */,
+			);
+			name = AlamofireOauth2;
+			sourceTree = "<group>";
+		};
 		55A8448042FE7DD1B099DE9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +272,7 @@
 		AEBE64411B8D231E004A0814 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				22D61F4D1C682FBE006C87A4 /* AlamofireOauth2 */,
 				2217FA6F1C62C1B500D55313 /* SegmentedView */,
 				2217FA6B1C61FE2F00D55313 /* LatestPosts */,
 				AEBE64401B8D2306004A0814 /* Weather */,
@@ -595,11 +618,13 @@
 				AE0DC2CD1B8E7B3900E67147 /* Observable.swift in Sources */,
 				AE2C7D6C1BA028C000A7A714 /* WeatherIcon.swift in Sources */,
 				2217FA771C63272B00D55313 /* SinglePostViewController.swift in Sources */,
+				22D61F4F1C68302F006C87A4 /* Oauth2Settings.swift in Sources */,
 				22D3786D1C5F7D0200D2687F /* ContentViewController.swift in Sources */,
 				AECBA5E81B836BF20004A536 /* WeatherViewController.swift in Sources */,
 				2217FA731C6320B600D55313 /* LatestPostsTableViewController.swift in Sources */,
 				AEBE643B1B8D1F90004A0814 /* ForecastViewModel.swift in Sources */,
 				AECBA5E61B836BF20004A536 /* AppDelegate.swift in Sources */,
+				22D61F531C68308E006C87A4 /* AuthentificationViewController.swift in Sources */,
 				AEF61B281BA23B1200E8F259 /* ForecastDateTime.swift in Sources */,
 				22EBEA091C6350A80032DE9C /* Essentials.swift in Sources */,
 				2217FA711C62C20300D55313 /* SegmentedViewController.swift in Sources */,
@@ -609,11 +634,14 @@
 				AED4B2C21B876E8B0003D765 /* ForecastView.swift in Sources */,
 				AE09C4301B9723DE00C7CCED /* LocationService.swift in Sources */,
 				2217FA6A1C6048FA00D55313 /* SecondViewController.swift in Sources */,
+				22D61F511C68305B006C87A4 /* AlamofireOauth2.swift in Sources */,
 				AEBE64431B8D2370004A0814 /* Weather.swift in Sources */,
+				22D61F571C68313A006C87A4 /* InitialAuthViewController.swift in Sources */,
 				AEBE643E1B8D2108004A0814 /* Forecast.swift in Sources */,
 				2217FA751C6320F200D55313 /* LatestPostsTableViewCell.swift in Sources */,
 				CAB56F4267B3BC487990A92D /* OpenWeatherMapService.swift in Sources */,
 				AEEDF68D1B9F9B2900C6067B /* Temperature.swift in Sources */,
+				22D61F551C6830C1006C87A4 /* OAuth2Client.swift in Sources */,
 				CAB565DDADB61DF9053BD50F /* WeatherServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

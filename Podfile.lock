@@ -1,11 +1,13 @@
 PODS:
   - Alamofire (3.1.5)
+  - KeychainAccess (2.3.3)
   - Nimble (3.0.0)
   - Quick (0.8.0)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
+  - KeychainAccess
   - Nimble
   - Quick
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
@@ -21,6 +23,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  KeychainAccess: 9b7e49e48277e329b1b3195e54697ed313d30acf
   Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
   Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
